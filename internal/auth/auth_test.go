@@ -19,7 +19,7 @@ func TestGetAPIHeader(t *testing.T) {
 		{
 			Name:       "Test correct passing case",
 			HeaderName: "Authorization",
-			TokenValue: "ApiKe 123456897W89798123423",
+			TokenValue: "ApiKey 123456897W89798123423",
 			Want:       "123456897W89798123423",
 			Err:        false,
 			ErrMsg:     "",
