@@ -21,6 +21,21 @@ jobs:
       - name: Run Tests
         run: go test ./... -cover
 
+<<<<<<< HEAD
   Style:
     name: GoFMT
     run: test -z $(go fmt ./...)
+=======
+  style:
+    name: Formating
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses : actions/checkout@v4
+        with:
+          go-version: "1.23.0"
+
+      - name: Check fmt
+        run: test -z $(go fmt ./...)
+>>>>>>> a24ed88 (added new job to the ci workflow to check go formatting is correct)
